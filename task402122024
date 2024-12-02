@@ -1,0 +1,21 @@
+function countVowels(str) {
+    // Convert string to lowercase to handle case insensitivity
+    str = str.toLowerCase();
+    
+    // Initialize a counter for vowels
+    let count = 0;
+
+    // Loop through each character in the string
+    for (let i = 0; i < str.length; i++) {
+        // Check if the character is a vowel (a, e, i, o, u)
+        if ('aeiou'.includes(str[i])) {
+            count++;
+        }
+    }
+
+    // Return the total count of vowels
+    return count;
+}
+
+// Example usage
+console.log(countVowels("Hello World")); // Output: 3
